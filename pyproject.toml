@@ -1,0 +1,20 @@
+[project]
+name = "cipherdeck"
+version = "0.1.0"
+description = "Cipher B (VuManChu WaveTrend + money flow) scanner and paper trader for Coinbase, longs on spot and NEAR shorts on the US perp"
+readme = "README.md"
+authors = [
+    { name = "Steven ODell", email = "saoii96@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "textual>=8.2.8",
+]
+
+[project.scripts]
+cipherdeck = "cipherdeck:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"

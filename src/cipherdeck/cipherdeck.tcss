@@ -1,0 +1,61 @@
+/* coindeck/gitdeck palette: focus #5fd75f, border #585858 */
+
+Screen {
+    background: ansi_default;
+    color: ansi_default;
+}
+
+#main {
+    height: 1fr;
+}
+
+#top {
+    height: 17;
+}
+
+#bottom {
+    height: 1fr;
+}
+
+.panel {
+    background: ansi_default;
+    border: round #585858;
+    border-title-color: #585858;
+    border-subtitle-color: #585858;
+    border-title-align: left;
+    border-subtitle-align: right;
+    scrollbar-size: 0 0;
+    padding: 0 1;
+}
+
+.panel:focus {
+    border: round #5fd75f;
+    border-title-color: #5fd75f;
+    border-title-style: bold;
+    border-subtitle-color: #5fd75f;
+}
+
+#scanner {
+    height: 100%;
+    width: 1fr;
+    min-width: 60;
+}
+
+#position {
+    height: 100%;
+    width: 44;
+}
+
+#log {
+    width: 1fr;
+}
+
+#trades {
+    width: 44;
+    overflow-y: auto;
+}
+
+#bar {
+    height: 1;
+    background: ansi_default;
+}
